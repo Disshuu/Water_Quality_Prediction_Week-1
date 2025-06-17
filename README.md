@@ -1,71 +1,76 @@
-# 💧 Water Quality Prediction using Machine Learning
+# 💧 Water Quality Prediction - RMS
 
-This mini-project uses machine learning to predict whether water is safe or unsafe based on various chemical properties. It was implemented entirely in **Google Colab**, making it accessible and easy to run online.
-
----
-
-## 🎯 Objective
-
-To create a classification model that predicts water quality using real-world environmental data. The project applies ML algorithms to identify safe and unsafe water, supporting clean water initiatives through AI.
+This project aims to predict multiple water quality parameters using machine learning techniques, specifically `MultiOutputRegressor` wrapped around a `RandomForestRegressor`. It was developed as part of a one-month **AICTE Virtual Internship** sponsored by **Shell** in **June 2025**.
 
 ---
 
-## 🔬 Chemical Parameters Used
+## 🌍 Overview
 
-| Parameter | Significance |
-|-----------|---------------|
-| NH₄ (Ammonium) | Indicates pollution from sewage & fertilizers |
-| BOD₅ | High values show organic pollution, lowers oxygen |
-| Suspended Solids | Causes murkiness, harms aquatic life |
-| O₂ (Dissolved Oxygen) | Low DO stresses aquatic life |
-| NO₃ (Nitrate) | Causes eutrophication & health issues |
-| NO₂ (Nitrite) | Toxic at low levels |
-| SO₄ (Sulfate) | Affects taste, promotes corrosion |
-| PO₄ (Phosphate) | Leads to algal blooms |
-| Cl (Chloride) | Affects freshwater ecosystems |
+Access to clean water is a critical global concern. Accurate prediction of various water quality metrics can help in early detection of pollution and ensure timely intervention.
+
+In this project, we:
+
+- Collected and preprocessed real-world water quality datasets  
+- Applied supervised machine learning for **multi-target regression**  
+- Built a pipeline using `MultiOutputRegressor` with `RandomForestRegressor`  
+- Evaluated the model using standard regression metrics  
 
 ---
 
-## 🧠 ML Models Used
+## 🔧 Technologies Used
 
-- Logistic Regression  
-- Random Forest Classifier  
-- Evaluation: Accuracy, Confusion Matrix, Report
-
----
-
-## 📊 Workflow
-
-1. Load and clean dataset  
-2. Visualize features (heatmaps, distributions)  
-3. Feature scaling  
-4. Train/test models  
-5. Predict water safety & evaluate
+- **Python 3.12**  
+- **Pandas, NumPy** – Data handling  
+- **Scikit-learn** – ML modeling and evaluation  
+- **Matplotlib, Seaborn** – Data visualization  
+- **Google Colab** – Cloud-based notebook for development and testing  
 
 ---
 
-## ✅ Output
+## 🔬 Predicted Water Quality Parameters
 
-- Classification: **Safe** or **Not Safe**  
-- Evaluation: Accuracy scores, visual insights  
-- Platform: 🟢 **Google Colab** for smooth execution
+The model predicts the following physicochemical water quality indicators:
+
+- NH₄ (Ammonium)  
+- BOD₅ (BSK5 - Biochemical Oxygen Demand)  
+- Colloids  
+- O₂ (Dissolved Oxygen)  
+- NO₃ (Nitrate)  
+- NO₂ (Nitrite)  
+- SO₄ (Sulfate)  
+- PO₄ (Phosphate)  
+- Cl (Chloride)  
 
 ---
 
-## 🛠️ Tech Stack
+## 📈 Model Performance
 
-- Python  
-- Pandas, NumPy, Matplotlib, Seaborn  
-- Scikit-learn  
-- Google Colab Notebook
+The model was evaluated using:
+
+- **R² Score**  
+- **Mean Squared Error (MSE)**  
+
+Performance was found acceptable across all predicted parameters, showing the model’s effectiveness in environmental quality forecasting.
+
+---
+
+## 🏫 Internship Details
+
+- **Internship Type**: AICTE Virtual Internship – Edunet Foundation  
+- **Sponsor**: Shell  
+- **Duration**: June 2025 (1 month)  
+- **Focus Area**: Machine Learning in Environmental Monitoring  
 
 ---
 
 ## 🙋‍♀️ Author
 
 **Divya Ramnani**  
-B.Tech (Data Science) | IPS Academy  
-Passionate about AI for Social Good & Environmental Tech
+B.Tech – Data Science, IPS Academy  
+Aspiring AI/ML engineer passionate about building solutions for sustainability and public welfare.
 
 ---
 
+## ✅ Note
+
+This project was implemented using **Google Colab** for easy access, experimentation, and model deployment.  
